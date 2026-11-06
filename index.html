@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StreamFlix | Watch Movies & Shows</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            STREAM<span>FLIX</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#trending">Trending</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#movies">Movies</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#shows">TV Shows</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+                    <button class="btn login-btn" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        <i class="fa-solid fa-user"></i> Sign In
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+        <span class="hero-label">
+            <i class="fa-solid fa-fire"></i> #1 TRENDING THIS WEEK
+        </span>
+
+        <h1>Discover Your Next <span>Favorite</span> Story.</h1>
+
+        <p>
+            Experience amazing movies, exciting adventures and
+            unforgettable entertainment. All in one place.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#movies" class="btn watch-btn">
+                <i class="fa-solid fa-play"></i> Explore Movies
+            </a>
+
+            <a href="#about" class="btn info-btn">
+                <i class="fa-solid fa-circle-info"></i> Learn More
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <h3>500+</h3>
+                <span>Movies</span>
+            </div>
+
+            <div>
+                <h3>100+</h3>
+                <span>TV Shows</span>
+            </div>
+
+            <div>
+                <h3>4K</h3>
+                <span>Quality</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- TRENDING SECTION -->
+<section class="section-padding" id="trending">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="small-title">WHAT'S POPULAR</span>
+                <h2>Trending <span>Now</span></h2>
+            </div>
+
+            <a href="#movies" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=600" alt="Cinema">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 9.2</span>
+                    <div class="movie-info">
+                        <h5>Dark Universe</h5>
+                        <p>2026 • Sci-Fi</p>
+                        <button class="btn card-btn watch-movie" data-title="Dark Universe">
+                            <i class="fa-solid fa-play"></i> Watch Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600" alt="Adventure">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 8.8</span>
+                    <div class="movie-info">
+                        <h5>Lost Kingdom</h5>
+                        <p>2026 • Adventure</p>
+                        <button class="btn card-btn watch-movie" data-title="Lost Kingdom">
+                            <i class="fa-solid fa-play"></i> Watch Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600" alt="Nature">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 9.0</span>
+                    <div class="movie-info">
+                        <h5>Wild Planet</h5>
+                        <p>2026 • Documentary</p>
+                        <button class="btn card-btn watch-movie" data-title="Wild Planet">
+                            <i class="fa-solid fa-play"></i> Watch Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=600" alt="Night sky">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 8.9</span>
+                    <div class="movie-info">
+                        <h5>Beyond Space</h5>
+                        <p>2026 • Fantasy</p>
+                        <button class="btn card-btn watch-movie" data-title="Beyond Space">
+                            <i class="fa-solid fa-play"></i> Watch Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- MOVIES SECTION -->
+<section class="section-padding movies-section" id="movies">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="small-title">EXPLORE OUR COLLECTION</span>
+                <h2>Explore <span>Movies</span></h2>
+            </div>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="row mb-4">
+
+            <div class="col-md-6">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="movieSearch"
+                        placeholder="Search your favorite movie...">
+                </div>
+            </div>
+
+            <div class="col-md-6 text-md-end mt-3 mt-md-0">
+
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="action">Action</button>
+                <button class="filter-btn" data-filter="comedy">Comedy</button>
+                <button class="filter-btn" data-filter="scifi">Sci-Fi</button>
+
+            </div>
+        </div>
+
+        <div class="row g-4" id="movieContainer">
+
+            <div class="col-6 col-md-4 col-lg-3 movie-item" data-category="action">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600" alt="Action movie">
+                    <span class="rating">8.7 ★</span>
+                    <div class="movie-info">
+                        <h5>Final Mission</h5>
+                        <p>Action • 2026</p>
+                        <button class="btn card-btn watch-movie" data-title="Final Mission">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 movie-item" data-category="comedy">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600" alt="Comedy movie">
+                    <span class="rating">8.4 ★</span>
+                    <div class="movie-info">
+                        <h5>Funny Nights</h5>
+                        <p>Comedy • 2026</p>
+                        <button class="btn card-btn watch-movie" data-title="Funny Nights">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 movie-item" data-category="scifi">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600" alt="Sci-Fi movie">
+                    <span class="rating">9.1 ★</span>
+                    <div class="movie-info">
+                        <h5>Future World</h5>
+                        <p>Sci-Fi • 2026</p>
+                        <button class="btn card-btn watch-movie" data-title="Future World">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 movie-item" data-category="action">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=600" alt="Space adventure">
+                    <span class="rating">8.9 ★</span>
+                    <div class="movie-info">
+                        <h5>Space Warriors</h5>
+                        <p>Action • 2026</p>
+                        <button class="btn card-btn watch-movie" data-title="Space Warriors">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 movie-item" data-category="comedy">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600" alt="Entertainment">
+                    <span class="rating">8.2 ★</span>
+                    <div class="movie-info">
+                        <h5>Happy Moments</h5>
+                        <p>Comedy • 2026</p>
+                        <button class="btn card-btn watch-movie" data-title="Happy Moments">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 movie-item" data-category="scifi">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=600" alt="Galaxy">
+                    <span class="rating">9.3 ★</span>
+                    <div class="movie-info">
+                        <h5>Galaxy Quest</h5>
+                        <p>Sci-Fi • 2026</p>
+                        <button class="btn card-btn watch-movie" data-title="Galaxy Quest">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 movie-item" data-category="action">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=600" alt="Adventure">
+                    <span class="rating">8.6 ★</span>
+                    <div class="movie-info">
+                        <h5>Wild Adventure</h5>
+                        <p>Action • 2026</p>
+                        <button class="btn card-btn watch-movie" data-title="Wild Adventure">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 movie-item" data-category="comedy">
+                <div class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600" alt="Music">
+                    <span class="rating">8.5 ★</span>
+                    <div class="movie-info">
+                        <h5>Party Time</h5>
+                        <p>Comedy • 2026</p>
+                        <button class="btn card-btn watch-movie" data-title="Party Time">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p id="noResults" class="text-center mt-4" style="display:none;">
+            No movies found. Try another search.
+        </p>
+
+    </div>
+</section>
+
+<!-- TV SHOWS -->
+<section class="section-padding" id="shows">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="small-title">WATCH YOUR FAVORITES</span>
+                <h2>Popular TV <span>Shows</span></h2>
+            </div>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="show-card">
+                    <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=800" alt="TV show">
+                    <div class="show-overlay">
+                        <h3>Galaxy Stories</h3>
+                        <p>Fantasy • 3 Seasons</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="show-card">
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800" alt="TV show">
+                    <div class="show-overlay">
+                        <h3>Ocean Mystery</h3>
+                        <p>Adventure • 2 Seasons</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="show-card">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800" alt="TV show">
+                    <div class="show-overlay">
+                        <h3>Lost World</h3>
+                        <p>Adventure • 4 Seasons</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SUBSCRIPTION BANNER -->
+<section class="subscription-section">
+
+    <div class="container text-center">
+
+        <span class="small-title">UNLIMITED ENTERTAINMENT</span>
+
+        <h2>Entertainment Without <span>Limits.</span></h2>
+
+        <p>Discover new stories and enjoy your favorite entertainment.</p>
+
+        <a href="#movies" class="btn watch-btn">
+            Explore Collection <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section-padding" id="about">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-md-6">
+                <img class="about-img"
+                    src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=900"
+                    alt="Movie theater">
+            </div>
+
+            <div class="col-md-6">
+
+                <span class="small-title">ABOUT STREAMFLIX</span>
+
+                <h2 class="about-title">
+                    Your World of <span>Entertainment.</span>
+                </h2>
+
+                <p>
+                    StreamFlix is a modern streaming website concept
+                    designed to bring movies, entertainment and exciting
+                    stories together in one beautiful place.
+                </p>
+
+                <p>
+                    Explore different genres, discover trending titles
+                    and enjoy a colorful entertainment experience.
+                </p>
+
+                <a href="#movies" class="btn watch-btn">Explore Now</a>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-md-5">
+
+                <a class="footer-logo" href="#home">
+                    STREAM<span>FLIX</span>
+                </a>
+
+                <p>
+                    Discover stories. Explore movies.
+                    Experience entertainment.
+                </p>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <h5>Quick Links</h5>
+
+                <a href="#home">Home</a>
+                <a href="#movies">Movies</a>
+                <a href="#shows">TV Shows</a>
+                <a href="#about">About Us</a>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h5>Contact</h5>
+
+                <p><i class="fa-solid fa-envelope"></i> info@streamflix.com</p>
+                <p><i class="fa-solid fa-globe"></i> www.streamflix.com</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 StreamFlix. All Rights Reserved.
+            This is a demo website.
+        </p>
+
+    </div>
+</footer>
+
+<!-- LOGIN MODAL -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content login-modal">
+
+            <div class="modal-header border-0">
+
+                <h4>Welcome to <span>StreamFlix</span></h4>
+
+                <button type="button" class="btn-close btn-close-white"
+                    data-bs-dismiss="modal"></button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <form id="loginForm">
+
+                    <label>Email Address</label>
+                    <input type="email" class="form-control"
+                        placeholder="Enter your email" required>
+
+                    <label class="mt-3">Password</label>
+                    <input type="password" class="form-control"
+                        placeholder="Enter your password" required>
+
+                    <button class="btn watch-btn w-100 mt-4" type="submit">
+                        Sign In
+                    </button>
+
+                </form>
+
+                <p class="login-note mt-3">
+                    Demo login only. No account is created.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- MOVIE MODAL -->
+<div class="modal fade" id="movieModal" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content login-modal">
+
+            <div class="modal-header border-0">
+
+                <h4 id="modalMovieTitle">Movie Preview</h4>
+
+                <button type="button" class="btn-close btn-close-white"
+                    data-bs-dismiss="modal"></button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <video controls class="w-100 rounded" id="demoVideo">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+
+                <p class="mt-3">
+                    This is a sample preview video for the StreamFlix demo.
+                    It is not the actual movie.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
